@@ -9,13 +9,21 @@
     <title>Rock,paper and scissor</title>
 </head>
 <body>
+   
     <div class="container-3">
         <h2>Rock, Paper & Scissors</h2>
         <div class="'flex-box-rps" id="flex-box-rps-div">
             <img id="rock" src="img/rock.jpg" onclick="rpsGame(this)"alt="">
             <img id="paper" src="img/paper.jpg" onclick="rpsGame(this)"alt="">
             <img id="scissors" src="img/sissor.jpg" onclick="rpsGame(this)"alt="">
+          
         </div>
+        <button class="btn btn-success" onClick="refreshPage()" >Replay</button>
+        <script>
+            function refreshPage(){
+                window.location.reload();
+            } 
+            </script>
     </div>
     <script src="main.js"></script>
 </body>
